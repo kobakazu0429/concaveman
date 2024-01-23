@@ -1,6 +1,6 @@
 {
-  "name": "concaveman",
-  "version": "1.2.1",
+  "name": "@kobakazu0429/concaveman",
+  "version": "2.0.0-pre1",
   "description": "Fast 2D concave hull algorithm in JavaScript (generates an outline of a point set)",
   "type": "module",
   "main": "./index.mjs",
@@ -19,8 +19,6 @@
     "tinyqueue": "^2.0.3"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-mourner": "^2.0.1",
     "vitest": "^1.2.1"
   },
   "scripts": {
@@ -28,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapbox/concaveman.git"
+    "url": "git://github.com/kobakazu0429/concaveman.git"
   },
   "keywords": [
     "concave",
@@ -38,9 +36,6 @@
     "shape",
     "outline"
   ],
-  "eslintConfig": {
-    "extends": "mourner"
-  },
   "author": "Vladimir Agafonkin",
   "license": "ISC"
 }
