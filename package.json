@@ -36,7 +36,8 @@
   },
   "scripts": {
     "test": "vitest",
-    "build": "rollup -c rollup.config.mjs"
+    "build": "rollup -c rollup.config.mjs",
+    "postinstall": "yarn run build"
   },
   "repository": {
     "type": "git",
