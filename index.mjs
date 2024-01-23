@@ -1,6 +1,3 @@
-// var pointInPolygon = require('point-in-polygon');
-// var orient = require('robust-predicates/umd/orient2d.min.js').orient2d;
-
 import RBush from "rbush";
 import Queue from "tinyqueue";
 import { pointInPolygon } from "point-in-polygon";
