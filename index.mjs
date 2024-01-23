@@ -1,6 +1,6 @@
 import RBush from "rbush";
 import Queue from "tinyqueue";
-import { pointInPolygon } from "point-in-polygon";
+import pointInPolygon from "point-in-polygon";
 import { orient2d as orient } from "robust-predicates";
 
 export function concaveman(points, concavity, lengthThreshold) {
