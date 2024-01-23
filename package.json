@@ -6,7 +6,7 @@
   "dependencies": {
     "point-in-polygon": "^1.1.0",
     "rbush": "^3.0.1",
-    "robust-predicates": "^2.0.4",
+    "robust-predicates": "^3.0.2",
     "tinyqueue": "^2.0.3"
   },
   "devDependencies": {
