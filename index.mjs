@@ -3,11 +3,6 @@ import Queue from "tinyqueue";
 import { pointInPolygon } from "point-in-polygon";
 import { orient2d as orient } from "robust-predicates";
 
-// Fix for require issue in webpack https://github.com/mapbox/concaveman/issues/18
-if (Queue.default) {
-  Queue = Queue.default;
-}
-
 export function concaveman(points, concavity, lengthThreshold) {
   // a relative measure of concavity; higher value means simpler hull
   concavity = Math.max(0, concavity === undefined ? 2 : concavity);
