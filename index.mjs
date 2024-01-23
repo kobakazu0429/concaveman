@@ -3,7 +3,7 @@ import Queue from "tinyqueue";
 import pointInPolygon from "point-in-polygon";
 import { orient2d as orient } from "robust-predicates";
 
-export function concaveman(points, concavity, lengthThreshold) {
+const concaveman = (points, concavity, lengthThreshold) => {
   // a relative measure of concavity; higher value means simpler hull
   concavity = Math.max(0, concavity === undefined ? 2 : concavity);
 
@@ -96,7 +96,7 @@ export function concaveman(points, concavity, lengthThreshold) {
   concave.push(node.p);
 
   return concave;
-}
+};
 
 function findCandidate(tree, a, b, c, d, maxDist, segTree) {
   var queue = new Queue([], compareDist);
@@ -434,3 +434,6 @@ function convexHull(points) {
   lower.pop();
   return lower.concat(upper);
 }
+
+export { concaveman };
+export default concaveman;
